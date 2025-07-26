@@ -1,0 +1,33 @@
+name: pokemon_route_music_app
+description: |
+  A Flutter app that plays Pokémon game music based on GPS location changes between routes.
+  This project is open‑source and intended as a proof of concept; you can
+  modify the audio assets and route mappings to suit your needs.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Location and geocoding
+  geolocator: ^10.1.0
+  geocoding: ^2.0.5
+
+  # Audio playback
+  audioplayers: ^1.0.1
+
+  # Permission handling
+  permission_handler: ^11.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
